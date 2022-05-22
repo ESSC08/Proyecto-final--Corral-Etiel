@@ -10,16 +10,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  /*padding-bottom: 3em;
-    position: relative;
-    min-height: 100vh;
-    font-family: 'Bebas Neue', cursive;
-    color: black;
-    line-height: 2em;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;*/ }
+  background-size: cover; }
 
 header {
   background-color: #3d1036;
@@ -28,7 +19,7 @@ header {
   padding: 15px;
   grid-area: header; }
 
-footer {
+/*footer {
   position: absolute;
   margin-bottom: 0rem;
   width: 100%;
@@ -36,10 +27,10 @@ footer {
 
 footer div img {
   display: inline-block;
-  padding: 0.5em; }
+  padding: 0.5em; }*/
 
 /*--------------------Estructura modificable "index.html" --------------------*/
-nav ul li {
+/*nav ul li {
   display: inline-block;
   padding: 15px; }
   nav ul li a {
@@ -82,14 +73,16 @@ h3 {
     border-radius: 2%;
 }*/
 /*------------------Estructura grid index.html-------------------*/
-.wrapper {
+/*.wrapper {
   grid-template-columns: 1fr;
   display: grid;
   gap: 20px;
-  grid-template-areas: "header" "article" "footer"; }
+  grid-template-areas: "header"
+  "article"
+  "footer"; }
 
 /*--------------------Estructura contacto.html--------------------*/
-.form {
+/*.form {
   width: 450px;
   margin: auto;
   border: 3px #2e0828 solid;
@@ -105,14 +98,16 @@ input, textarea {
   padding: 7px; }
 
 /*------------------Estructura grid contacto.html-----------------*/
-.wrapper1 {
+/*.wrapper1 {
   grid-template-columns: 1fr 1fr;
   display: grid;
   gap: 3em;
-  grid-template-areas: "header header" "article1 article2" "footer footer"; }
+  grid-template-areas: "header header"
+  "article1 article2"
+  "footer footer"; }
 
 /*--------------Interaccion con grid--------------*/
-.main-head {
+/*.main-head {
   grid-area: header; }
 
 .main-footer {
@@ -130,29 +125,37 @@ article {
 
 /*--------------------WEB---------------------*/
 /*-----------1024px------------*/
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .wrapper1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     display: grid;
     gap: 3em;
-    grid-template-areas: "header header" "article1 article2" "footer footer"; } }
+    grid-template-areas: "header header"
+  "article1 article2"
+  "footer footer"; } }
 
 /*------------Movil first-------------*/
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .wrapper1 {
     grid-template-columns: 1fr;
     display: grid;
     gap: 3em;
-    grid-template-areas: "header" "article1" "article2" "footer"; } }
+    grid-template-areas: "header"
+  "article1"
+  "article2"
+  "footer"; } }
 
 /*--------------smart phone----------------*/
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
   .wrapper1 {
     grid-template-columns: 1fr;
     display: grid;
     gap: 3em;
-    grid-template-areas: "header" "article1" "article2" "footer"; }
+    grid-template-areas: "header"
+  "article1"
+  "article2"
+  "footer"; }
   nav ul li {
     display: inline-block;
     padding: 5px; } }
