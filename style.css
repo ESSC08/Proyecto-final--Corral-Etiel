@@ -104,7 +104,6 @@ div p {
   background: rgba(0, 0, 0, 0.5);
   padding: 15px 10px;
   border-radius: 7px;
-  display: grid;
 }
 
 input, textarea {
@@ -117,13 +116,13 @@ input, textarea {
 }
 
 /*------------------Estructura grid contacto.html-----------------*/
-.wrapper1 {
+/*.wrapper1 {
   grid-template-columns: 1fr 1fr;
   display: grid;
   gap: 2em;
   grid-template-areas: "header header"
   "formulario formulario"
-  "footer footer"; }
+  }
 
 /*--------------Interaccion con grid--------------*/
 .formulario {
