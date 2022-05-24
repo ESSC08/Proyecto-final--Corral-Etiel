@@ -6,13 +6,14 @@
 
 /*---------------------Estructura general sin cambios body-footer-------------------*/
 body {
-  background-image: url(assets/Fondo3.jpg);
+  background-image: url(./assets/p-fondo.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
-header {
+/*header {
   background-color: #3d1036;
   color: white;
   display: grid;
@@ -39,6 +40,7 @@ footer div img {
     nav ul li a:hover {
       transition-duration: 1.5s;
       color: #15ff00; }
+      */
 
 article {
   padding: 55px 30px;
@@ -47,10 +49,10 @@ article {
   text-align: center; }
 
 .img1 {
-  border: #15ff00 2px solid;
+  border: white 2px solid;
   border-radius: 2%; }
 
-.img1:hover {
+/*.img1:hover {
   transform: scale(1.1) translateZ(8px);
   transition: all;
   transition-duration: 1.5s; }
@@ -58,15 +60,28 @@ article {
 .video:hover {
   transform: scale(1.9) translateY(26%);
   transition: all;
-  transition-duration: 2s; }
+  transition-duration: 2s; }*/
 
 h2 {
   padding: 1fr;
-  color: #15ff00; }
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
 
 h3 {
   padding: 1fr;
-  color: black; }
+  color: black;
+  text-align: center;
+}
+
+div p {
+  padding: 1px;
+  color: black;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+}
 
 /*img {
     border: 2px #2e0828 solid;
@@ -82,31 +97,41 @@ h3 {
   "footer"; }
 
 /*--------------------Estructura contacto.html--------------------*/
-/*.form {
+.formulario {
   width: 450px;
-  margin: auto;
-  border: 3px #2e0828 solid;
+  margin: 20px auto;
+  border: 2px black solid;
   background: rgba(0, 0, 0, 0.5);
   padding: 15px 10px;
-  border-radius: 7px; }
+  border-radius: 7px;
+  display: grid;
+}
 
 input, textarea {
   width: 90%;
-  border-radius: 3px;
-  border-color: #2e0828;
+  border-radius: 2px;
+  border-color: black;
   font-size: 15px;
-  padding: 7px; }
+  margin: 2px;
+  padding: 6px;
+}
 
 /*------------------Estructura grid contacto.html-----------------*/
-/*.wrapper1 {
+.wrapper1 {
   grid-template-columns: 1fr 1fr;
   display: grid;
-  gap: 3em;
+  gap: 2em;
   grid-template-areas: "header header"
-  "article1 article2"
+  "formulario formulario"
   "footer footer"; }
 
 /*--------------Interaccion con grid--------------*/
+.formulario {
+  grid-area: formulario;
+}
+
+
+
 /*.main-head {
   grid-area: header; }
 
