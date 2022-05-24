@@ -1,8 +1,15 @@
-/*Reset inicial HTML*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.formulario {
+  width: 420px;
+  margin: 20px auto;
+  border: 2px black solid;
+  background: #20ff0241;
+  padding: 15px 10px;
+  border-radius: 7px; }
 
 body {
   background-image: url(./assets/p-fondo.jpg);
@@ -38,14 +45,6 @@ div p {
   font-weight: 400;
   font-size: 1.4rem;
   text-align: center; }
-
-.formulario {
-  width: 420px;
-  margin: 20px auto;
-  border: 2px black solid;
-  background: #20ff0241;
-  padding: 15px 10px;
-  border-radius: 7px; }
 
 input, textarea {
   width: 90%;

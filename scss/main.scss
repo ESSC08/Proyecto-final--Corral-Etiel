@@ -1,65 +1,7 @@
-/*Reset inicial HTML*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
-  
-  body {
-    background-image: url(./assets/p-fondo.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  article {
-    padding: 55px 30px;
-    margin: 80px 30px;
-    color: white;
-    text-align: center; 
-  }
-  
-  .img1 {
-    border: white 2px solid;
-    border-radius: 2%; 
-  }
-  
-  h2 {
-    padding: 1fr;
-    color: white;
-    text-align: center;
-    -webkit-text-stroke: 1px black;
-  }
-  
-  h3 {
-    padding: 1fr;
-    color: black;
-    text-align: center;
-  }
-  
-  div p {
-    padding: 1px;
-    color: black;
-    font-weight: 400;
-    font-size: 1.4rem;
-    text-align: center;
-  }
-  
-  .formulario {
-    width: 420px;
-    margin: 20px auto;
-    border: 2px black solid;
-    background: #20ff0241;
-    padding: 15px 10px;
-    border-radius: 7px;
-  }
-  
-  input, textarea {
-    width: 90%;
-    border-radius: 2px;
-    border-color: black;
-    font-size: 15px;
-    margin: 2px;
-    padding: 6px;
-  }
+//-----------@import------------//
+
+@import "./components/_reset.scss";
+@import "./components/_formulario.scss";
+@import "./components/body";
+@import "./components/articulo";
+@import "./components/img-texto";
